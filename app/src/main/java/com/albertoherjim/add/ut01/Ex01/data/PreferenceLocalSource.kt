@@ -1,14 +1,13 @@
-package com.albertoherjim.add.UT01.Ex01.data;
+package com.albertoherjim.add.ut01.Ex01.data
 
 import android.content.Context
-import androidx.appcompat.app.AppCompatActivity;
-import com.albertoherjim.add.R
-import com.albertoherjim.add.UT01.Ex01.domain.Custumer
+import androidx.appcompat.app.AppCompatActivity
+import com.albertoherjim.add.ut01.Ex01.domain.Custumer
 
-class SharedPreferencesLocalSource(val context: Context) {
-
-    val sharedPref = context.getSharedPreferences(
-        context.getString(R.string.prefence_ut01ex01), Context.MODE_PRIVATE)
+class PreferenceLocalSource(private val activity: AppCompatActivity) {
+    val sharedPref = activity.getPreferences(
+        Context.MODE_PRIVATE
+    )
 
     fun saveCostumer(customer: Custumer){
         val editor = sharedPref.edit()
@@ -20,6 +19,7 @@ class SharedPreferencesLocalSource(val context: Context) {
             putBoolean("is_active",customer.isActive)
             apply()
         }
+
         /*
         editor.putInt("id",customer.id)
         editor.putString("name", customer.name)
@@ -29,6 +29,9 @@ class SharedPreferencesLocalSource(val context: Context) {
         //editor.commit() //sincrono
 
         */
+
+
+
     }
 
     fun getCustumer(): Custumer {
@@ -40,6 +43,4 @@ class SharedPreferencesLocalSource(val context: Context) {
 
         )
     }
-
-
 }

@@ -1,10 +1,10 @@
-package com.albertoherjim.add.UT01.Ex02.Presentation
+package com.albertoherjim.add.ut01.Ex02.Presentation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import com.albertoherjim.add.R
-import com.albertoherjim.add.UT01.Ex02.data.PreferencesLocalSource
+import com.albertoherjim.add.ut01.Ex02.data.PreferencesLocalSource
 
 class Ut01Ex02Activity : AppCompatActivity() {
 
