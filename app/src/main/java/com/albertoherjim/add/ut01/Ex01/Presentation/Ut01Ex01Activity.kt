@@ -1,14 +1,12 @@
-package com.albertoherjim.add.UT01.Ex01.Presentation
+package com.albertoherjim.add.ut01.Ex01.Presentation
 
-import android.content.SharedPreferences
 import android.os.Bundle
-import android.os.PersistableBundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.albertoherjim.add.R
-import com.albertoherjim.add.UT01.Ex01.data.PreferenceLocalSource
-import com.albertoherjim.add.UT01.Ex01.data.SharedPreferencesLocalSource
-import com.albertoherjim.add.UT01.Ex01.domain.Custumer
+import com.albertoherjim.add.ut01.Ex01.data.PreferenceLocalSource
+import com.albertoherjim.add.ut01.Ex01.data.SharedPreferencesLocalSource
+import com.albertoherjim.add.ut01.Ex01.domain.Custumer
 
 class Ut01Ex01Activity : AppCompatActivity() {
 

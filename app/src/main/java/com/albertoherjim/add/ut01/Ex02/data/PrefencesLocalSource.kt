@@ -1,8 +1,7 @@
-package com.albertoherjim.add.UT01.Ex02.data
+package com.albertoherjim.add.ut01.Ex02.data
 
 import android.content.Context
-import com.albertoherjim.add.UT01.Ex02.Presentation.Ut01Ex02Activity
-import com.albertoherjim.add.UT01.Ex02.domain.firstTimeOpener
+import com.albertoherjim.add.ut01.Ex02.domain.firstTimeOpener
 
 class PreferencesLocalSource(private val context: Context) {
     val sharedPref = context.getSharedPreferences(
